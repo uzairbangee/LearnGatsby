@@ -1,5 +1,6 @@
 module.exports = {
-    plugins: [
-
-    ]
-}
+  plugins: [
+    "gatsby-plugin-typescript",
+    `gatsby-plugin-material-ui`,
+  ],
+};
