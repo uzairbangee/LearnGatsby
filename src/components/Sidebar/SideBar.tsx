@@ -65,12 +65,12 @@ const Sidebar = ({ handleDrawerToggle, mobileOpen }: Props): ReactElement => {
                     <ListItemText primary={'Inbox'} />
                 </ListItem>
             </Link>
-            <Link to="/dynamic">
-                <ListItem button key={'Dynamic'}>
+            <Link to="/app">
+                <ListItem button key={'Profile'}>
                     <ListItemIcon>
                         <InboxIcon />
                     </ListItemIcon>
-                    <ListItemText primary={'Dynamic'} />
+                    <ListItemText primary={'Profile'} />
                 </ListItem>
             </Link>
         </List>

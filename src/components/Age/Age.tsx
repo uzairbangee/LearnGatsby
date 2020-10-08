@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { ReactElement } from 'react'
 
-export default () => {
+interface Props {
+    age : number;
+}
+
+const Age = ({age}: Props): ReactElement => {
     return (
         <div>
-            This is Age
+            Age: {age}
         </div>
-    );
+    )
 }
+
+export default Age

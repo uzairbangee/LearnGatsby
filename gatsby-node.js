@@ -1,21 +1,21 @@
-// exports.onCreateNode = ({ node }) => {
-//     console.log(`Node created of type "${node.internal.type}"`)
-// }
+exports.onCreateNode = ({ node }) => {
+    console.log(`Node created of type "${node.internal.type}"`)
+}
 
-// exports.createPages = async function ({ actions }) {
+exports.createPages = async function ({ actions }) {
 
-//     actions.createPage({
-//         path: "/dynamic",
-//         component: require.resolve(`./src/templates/dynamic.tsx`),
-//         context: { 
-//             // Data passed to context is available
-//             // in pageContext props of the template component
-//             name: "Uzair",
-//             age: 21
-//          },
-//     });
-//     console.log("End of Gatsby Node File");
-// }
+    actions.createPage({
+        path: "/dynamic",
+        component: require.resolve(`./src/templates/dynamic.tsx`),
+        context: { 
+            // Data passed to context is available
+            // in pageContext props of the template component
+            name: "Uzair",
+            age: 21
+         },
+    });
+    console.log("End of Gatsby Node File");
+}
 
 exports.onCreatePage = async ({ page, actions }) => {
     const { createPage } = actions
